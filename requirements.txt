@@ -1,0 +1,10 @@
+fastapi>=0.115.6
+uvicorn[standard]>=0.34.0
+python-multipart>=0.0.20
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+faster-whisper>=1.1.1
+# faster-whisper 1.2.1 passes metadata_errors to av.open; PyAV 19 removed that argument.
+av>=11,<19
+pytest>=8.3.0
+httpx>=0.28.0
