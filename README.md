@@ -4,6 +4,12 @@ Small HTTP service that accepts a WAV or MP3 upload, normalizes it with FFmpeg, 
 
 Install and start steps are in [docs/INSTALLATION.md](docs/INSTALLATION.md). Request examples and the error table are in [docs/USAGE.md](docs/USAGE.md). The behavior reference is [docs/TECHNICAL_PLAN.md](docs/TECHNICAL_PLAN.md).
 
+Design write-ups:
+
+- [docs/DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md) — why the prototype is built this way
+- [docs/ALTERNATIVES.md](docs/ALTERNATIVES.md) — approaches considered and left unimplemented
+- [docs/ENTERPRISE_SCALE.md](docs/ENTERPRISE_SCALE.md) — scaling, failure handling, and a multi-tenant deployment
+
 ## Features
 
 - `POST /v1/transcriptions` accepts a multipart field named `file`.
